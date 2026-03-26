@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>曾育淳 個人履歷</title>
+    <style>
+        body {
+            font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            position: relative; /* 為了讓頭像絕對定位 */
+        }
+
+        header {
+            text-align: left; /* 改為左對齊，留出右邊放頭像空間 */
+            border-bottom: 3px solid #4a90e2;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            padding-right: 200px; /* 為頭像留出空間 */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #2c3e50;
+            letter-spacing: 5px;
+        }
+
+        .contact-info {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column; /* 改為垂直排列 */
+            gap: 8px;
+            color: #666;
+            font-size: 15px;
+        }
+
+        /* 專業頭像樣式 - 完美整合照片 */
+        .profile-pic-container {
+            position: absolute;
+            top: 50px; /* 根據 header 調整 */
+            right: 50px; /* 根據 container padding 調整 */
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #4a90e2; /* 延用你的藍色主題 */
+            overflow: hidden; /* 確保圖片不超出圓圈 */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .profile-pic-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* 關鍵：確保照片按比例填充圓圈，不變形 */
+            object-position: center top; /* 聚焦在臉部 */
+        }
+
+        section {
+            margin-bottom: 35px;
+        }
+
+        section h2 {
+            display: flex;
+            align-items: center;
+            font-size: 22px;
+            color: #4a90e2;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        section h2::before {
+            content: "■";
+            margin-right: 10px;
+            font-size: 16px;
+        }
+
+        .content-box {
+            padding: 0 15px;
+        }
+
+        .highlight-text {
+            background-color: #f8fbff;
+            border-left: 4px solid #4a90e2;
+            padding: 15px;
+            margin: 10px 0;
+            font-style: italic;
+        }
+
+        ul {
+            padding-left: 20px;
+            list-style-type: none;
+        }
+
+        ul li {
+            margin-bottom: 12px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: "•";
+            color: #4a90e2;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background: #e1ecf4;
+            color: #39739d;
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            margin: 5px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 13px;
+            color: #aaa;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 20px; margin: 10px; }
+            header { padding-right: 0; text-align: center; padding-top: 180px; } /* 手機版調整 */
+            header h1 { font-size: 28px; }
+            .contact-info { align-items: center; }
+            .profile-pic-container { position: relative; top: 0; right: 0; margin: 0 auto 20px auto; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="profile-pic-container">
+        <img src="image/photo.jpg" alt="曾育淳 個人照片">
+    </div>
+
+    <header>
+        <h1>曾育淳</h1>
+        <div class="contact-info">
+            <span><strong>學校：</strong>亞洲大學</span>
+            <span><strong>學號：</strong>AU114018080</span>
+            <span><strong>Email：</strong><a href="mailto:yourname@example.com" style="color:#4a90e2; text-decoration:none;">yourname@example.com</a></span>
+        </div>
+    </header>
+
+    <section>
+        <h2>關於我</h2>
+        <div class="content-box">
+            <p>目前就讀於亞洲大學聽力暨語言治療學系一年級。我是一位對人體構造與溝通障礙領域充滿好奇心的學習者。在大一的學習過程中，我致力於建立扎實的基礎科學知識，並積極培養跨領域的軟實力，包含數位工具的運用與團隊溝通技巧，期待未來能將所學應用於實務觀察中。</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>教育背景</h2>
+        <div class="content-box">
+            <p><strong>亞洲大學 (Asia University)</strong> | 聽力暨語言治療學系 | 2025.09 — 至今</p>
+            <ul>
+                <li>主修科目：基礎解剖生理學、聽力與語言科學導論。</li>
+                <li>積極參與學系講座，了解產業現狀與職涯發展。</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>多元技能與專長</h2>
+        <div class="content-box">
+            <div>
+                <span class="skill-tag">基礎資訊素養 (HTML / CSS / JS)</span>
+                <span class="skill-tag">簡報設計與視覺傳達</span>
+                <span class="skill-tag">問題分析與邏輯思考</span>
+                <span class="skill-tag">團隊協作與活動執行</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>校內表現與經歷</h2>
+        <div class="content-box">
+            <ul>
+                <li><strong>學術參與：</strong>協助整理系上學術活動資料，學習如何統整複雜的專業資訊。</li>
+                <li><strong>團隊專案：</strong>於通識課程中擔任小組協調者，負責專案進度管理與視覺設計呈現。</li>
+                <li><strong>自主學習：</strong>利用課餘時間精進數位工具使用，提升資訊處理效率。</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>自我期許</h2>
+        <div class="content-box">
+            <div class="highlight-text">
+                作為聽語系的大一生，我的目標不只是被動地接收知識，而是主動建構專業。
+            </div>
+            <p>在接下來的大學生活中，我對自己有以下三點核心期許：</p>
+            <ul>
+                <li><strong>深耕專業知能：</strong>在大一、大二階段打好解剖學與聽語基礎科學的根基，確保未來進入臨床實習時具備足夠的理論支撐。</li>
+                <li><strong>強化多元跨界能力：</strong>在AI與數位化時代，我希望持續精進數位工具與網頁基礎技術，探索聽語專業與數位科技結合的可能性。</li>
+                <li><strong>培養同理心與觀察力：</strong>透過校內外的志工服務或社團活動，訓練自己與不同背景人士溝通的能力，這對於未來面對個案時的溝通至關重要。</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 AU114001001 個人履歷存檔
+    </footer>
+</div>
+
+</body>
+</html>
